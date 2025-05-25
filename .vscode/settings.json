@@ -1,0 +1,171 @@
+{
+  // 🌐 Мова інтерфейсу
+  "locale": "uk",
+  // 🎨 Тема та іконки
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  // 🔠 Шрифт та читабельність
+  "editor.fontFamily": "'Comic Code', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.letterSpacing": 0.5,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.guides.indentation": true,
+  "editor.minimap.enabled": false,
+  // ⬅️ Відступи
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  // 🌈 Кольорові дужки та вкладення
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  // 💾 Збереження та автоформатування
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ⚡ Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // 🖥️ Термінал
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.focusAfterRun": "terminal",
+  "terminal.integrated.fontFamily": "'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorStyle": "underline",
+  // 🔍 Пошук
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.smartCase": true,
+  // 🧭 Навігація
+  "breadcrumbs.enabled": true,
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // ✅ Перевірка коду
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+  "editor.codeActions.triggerOnFocusChange": false,
+  // 📝 Граматика
+  "cSpell.language": "uk-UA,en",
+  "cSpell.enableFiletypes": ["javascript", "typescript", "html", "markdown"],
+  // 🌍 Переклад
+  "vscodeGoogleTranslate.sourceLanguage": "uk",
+  "vscodeGoogleTranslate.targetLanguage": "en",
+  // 🔔 Підсвітка помилок
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "invalid",
+        "settings": {
+          "foreground": "#FF5370",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  // 🧠 Автодоповнення
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.parameterHints.enabled": true,
+  "javascript.suggest.enabled": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.implementationsCodeLens.enabled": true,
+  "css.validate": true,
+  "scss.validate": true,
+  // 🧩 Класи в HTML
+  "html-css-class-completion.enableEmmetSupport": true,
+  // 💬 Better Comments з українськими тегами
+  "better-comments.tags": [
+    {
+      "tag": "УВАГА",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "bold": true
+    },
+    {
+      "tag": "ПОРАДА",
+      "color": "#2DDB55",
+      "strikethrough": false,
+      "italic": true
+    },
+    {
+      "tag": "ЗАВДАННЯ",
+      "color": "#FFBC00",
+      "strikethrough": false,
+      "underline": true
+    },
+    {
+      "tag": "ІНФО",
+      "color": "#3794FF",
+      "strikethrough": false
+    }
+  ],
+  // ✅ TODO Tree
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.general.tags": ["TODO", "FIXME", "NOTE", "ЗАВДАННЯ", "УВАГА"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "text",
+    "foreground": "#ffffff",
+    "background": "#ff5370",
+    "icon": "check",
+    "iconColour": "#FFBC00"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "ЗАВДАННЯ": {
+      "icon": "alert",
+      "type": "line",
+      "background": "#FFBC00",
+      "foreground": "#000000"
+    },
+    "УВАГА": {
+      "icon": "flame",
+      "type": "line",
+      "background": "#FF2D00",
+      "foreground": "#ffffff"
+    }
+  },
+  // 🔧 Теги
+  "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "javascript",
+    "javascriptreact"
+  ],
+  "cSpell.words": ["Запропонуйте"]
+}
