@@ -113,7 +113,7 @@ console.log(totalTime(totalMinutes));
 // в іншому випадку вивести в alert рядок "Невірний пароль!"
 
 // const login = prompt('Введіть логін:');
-
+ 
 // console.log('Введений логін:', login);
 
 // if (login === 'Адмін') {
@@ -132,7 +132,7 @@ console.log(totalTime(totalMinutes));
 //   alert('Я вас не знаю');
 // }
 
-//6. Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
+//* 6. Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
 // let number = 0;
 // while (number <= 20) {
 //   console.log(`Number: ${number}`);
