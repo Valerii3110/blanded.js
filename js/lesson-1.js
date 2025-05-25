@@ -1,25 +1,24 @@
-// let result = alert("hello");
-// console.log(result):
-// alert("hello");
-// confirm()
+let result = alert("hello");
+console.log(result):
+alert("hello");
+confirm();
 
-// Запропонуйте користувачу ввести число за допомогою prompt().
-// Збережіть введене значення у змінну number.
-// Перевірте, чи дорівнює змінна number числу 10:
-//    Якщо так – виведіть повідомлення 'Вірно' у alert().
-//    Якщо ні – виведіть 'Невірно'.
+//* Запропонуйте користувачу ввести число за допомогою prompt().
+Збережіть введене значення у змінну number.
+Перевірте, чи дорівнює змінна number числу 10:
+Якщо так – виведіть повідомлення 'Вірно' у alert().Якщо ні – виведіть 'Невірно'.
 
-// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
-// перетворіть значення на число за допомогою Number().
+Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
+перетворіть значення на число за допомогою Number().
 
-// let number = prompt('Введіть число');
-// number = Number(number);
-// if (number === 10) {
-//   alert('Вірно');
-// } else {
-//   alert('Невірно');
-// }
-// console.log(number);
+let number = prompt('Введіть число');
+number = Number(number);
+if (number === 10) {
+alert('Вірно');
+} else {
+alert('Невірно');
+}
+console.log(number);
 
 // У змінній min лежить випадкове число від 0 до 59.
 // Визначте, в яку чверть години потрапляє
@@ -27,24 +26,24 @@
 // Виведіть в alert відповідне повідомлення, наприклад:
 // "10 входить в першу чверть"
 
-// const min = Math.floor(Math.random() * (59 - 0) + 0);
+const min = Math.floor(Math.random() * (59 - 0) + 0);
 
-// const min = Math.floor(Math.random() * 59);
-// let message;
+const min = Math.floor(Math.random() * 59);
+let message;
 
-// if (min >= 0 && min < 15) {
-//   message = `${min} входить у першу чверть`;
-// } else if (min >= 15 && min < 30) {
-//   message = `${min} входить у другу чверть`;
-// } else if (min >= 30 && min < 45) {
-//   message = `${min} входить у третю чверть`;
-// } else {
-//   message = `${min} входить у четверту чверть`;
-// }
+if (min >= 0 && min < 15) {
+  message = `${min} входить у першу чверть`;
+} else if (min >= 15 && min < 30) {
+  message = `${min} входить у другу чверть`;
+} else if (min >= 30 && min < 45) {
+  message = `${min} входить у третю чверть`;
+} else {
+  message = `${min} входить у четверту чверть`;
+}
 
-// alert(message);
+alert(message);
 
-//3. Змінна num може набувати 4 значення: '1', '2', '3' або '4'
+//* 3. Змінна num може набувати 4 значення: '1', '2', '3' або '4'
 // (запитуй це значення у користувача через prompt).
 // Якщо вона має значення '1', то у змінну result запишіть 'зима',
 // якщо має значення '2' - 'весна' і так далі.
@@ -55,28 +54,28 @@
 // Значення змінної result виведіть в консоль.
 // Запитуємо у користувача число від 1 до 4
 
-// const num = prompt("Введіть число від 1 до 4:");
+const num = prompt("Введіть число від 1 до 4:");
 
-// let result;
+let result;
 
-// switch (num) {
-//   case '1':
-//     result = "зима";
-//     break;
-//   case '2':
-//     result = "весна";
-//     break;
-//   case '3':
-//     result = "літо";
-//     break;
-//   case '4':
-//     result = "осінь";
-//     break;
-//   default:
-//     result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
-// }
+switch (num) {
+  case '1':
+    result = "зима";
+    break;
+  case '2':
+    result = "весна";
+    break;
+  case '3':
+    result = "літо";
+    break;
+  case '4':
+    result = "осінь";
+    break;
+  default:
+    result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
+}
 
-// console.log(result);
+console.log(result);
 
 //4. Отримуйте від користувача число (кількість хвилин) через prompt
 // і виводьте у консоль рядок у форматі годин та хвилин.
@@ -97,7 +96,7 @@ function totalTime(totalMinutes) {
 
 console.log(totalTime(totalMinutes));
 
-//5. Напишіть код, який запитуватиме у користувача
+// 5. Напишіть код, який запитуватиме у користувача
 // логін за допомогою prompt і виводить результат в консоль браузера
 
 // Після цього додайте перевірку введеного користувачем значення:
@@ -137,4 +136,5 @@ console.log(totalTime(totalMinutes));
 // while (number <= 20) {
 //   console.log(`Number: ${number}`);
 //   number += 1;
-// }
+// } */
+
