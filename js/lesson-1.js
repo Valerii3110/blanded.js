@@ -195,41 +195,41 @@
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
 
-function fizzBuzz(num) {
-  for (let i = 1; i <= num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("fizzbuzz");
-    } else if (i % 3 === 0) {
-      console.log("fizz");
-    } else if (i % 5 === 0) {
-      console.log("buzz");
-    } else {
-      console.log(i);
-    }
-  }
-}
+// function fizzBuzz(num) {
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("fizzbuzz");
+//     } else if (i % 3 === 0) {
+//       console.log("fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
 
-function fizzBuzz(num) {
-  for (let i = 1; i <= num; i++) {
-    let label = "";
+// function fizzBuzz(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let label = "";
 
-    if (i % 3 === 0) label += "fizz";
-    if (i % 5 === 0) label += "buzz";
+//     if (i % 3 === 0) label += "fizz";
+//     if (i % 5 === 0) label += "buzz";
 
-    switch (label) {
-      case "fizzbuzz":
-        console.log("fizzbuzz");
-        break;
-      case "fizz":
-        console.log("fizz");
-        break;
-      case "buzz":
-        console.log("buzz");
-        break;
-      default:
-        console.log(i);
-    }
-  }
-}
-fizzBuzz(15); // Виведе числа від 1 до 15 з відповідними замінами
-fizzBuzz(15); // Виведе числа від 1 до 15 з відповідними замінами
+//     switch (label) {
+//       case "fizzbuzz":
+//         console.log("fizzbuzz");
+//         break;
+//       case "fizz":
+//         console.log("fizz");
+//         break;
+//       case "buzz":
+//         console.log("buzz");
+//         break;
+//       default:
+//         console.log(i);
+//     }
+//   }
+// }
+// fizzBuzz(15); // Виведе числа від 1 до 15 з відповідними замінами
+// fizzBuzz(15); // Виведе числа від 1 до 15 з відповідними замінами
