@@ -1,4 +1,4 @@
-// Створіть масив styles з елементами 'jazz' і 'blues'
+//1 Створіть масив styles з елементами 'jazz' і 'blues'
 // Додайте до кінця масиву елемент 'rock-n-roll' за допомогою відповідного методу масивів
 // Знайдіть елемент 'blues' у масиві та замініть його на 'classic', використовуючи JavaScript-код
 
@@ -11,9 +11,13 @@
 // const styles = ["jazz", "blues"];
 // styles.push("rock-n-roll");
 // const bluesIndex = styles.indexOf("blues");
-// if (bluesIndex !== -1) {
-//   styles[bluesIndex] = "classic";
-// }
+// // if (bluesIndex !== -1) {
+// //   // styles[bluesIndex] = "classic";
+// //   styles.splice(bluesIndex, 1, "classic");
+// // }
+// styles[bluesIndex] = "classic";
+// console.log(styles);
+
 // function logItems(array) {
 //   for (let i = 0; i < array.length; i++) {
 //     console.log(`${i + 1} - ${array[i]}`);
@@ -21,12 +25,13 @@
 // }
 
 // logItems(styles);
-// // Додайте до масиву styles елемент 'country' на початку масиву за допомогою відповідного методу масивів
+
+// 2 Додайте до масиву styles елемент 'country' на початку масиву за допомогою відповідного методу масивів
 // styles.unshift("country");
 // // Виведіть у консоль масив styles, щоб перевірити результат
 // console.log(styles);
 
-// 3Напишіть функцію checkLogin(array), яка:
+// 3 Напишіть функцію checkLogin(array), яка:
 // Приймає масив логінів як аргумент.
 // Запитує ім'я користувача через prompt.
 // Перевіряє, чи є введене ім'я у переданому масиві.
@@ -43,10 +48,15 @@
 //     alert("User not found");
 //   }
 // }
+// //* або
+// function checkLogin(array) {
+//   const name = prompt("Введіть ваше ім'я:");
+//   array.includes(name) ? alert(`Welcome, ${name}!`) : alert("User not found");
+// }
 
 // checkLogin(logins);
-// // Виклик функції для перевірки логінів
-// // checkLogin(logins);
+// Виклик функції для перевірки логінів
+// checkLogin(logins);
 
 // 4 Напишіть функцію caclculateAverage(),
 // яка приймає довільну кількість
@@ -70,7 +80,7 @@
 // console.log(calculateAverage(5, "hello", 15)); // 10
 // console.log(calculateAverage()); // 0
 
-// Напишіть функцію, яка сумуватиме сусідні числа
+//5 Напишіть функцію, яка сумуватиме сусідні числа
 // і пушитиме їх в новий масив.
 
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
@@ -89,7 +99,7 @@
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
 // console.log(sumAdjacentNumbers(someArr)); // [33, 45, 39, 17, 25, 27, 29]
 
-//* Напишіть функцію findSmallestNumber(numbers),
+//* 5 Напишіть функцію findSmallestNumber(numbers),
 // яка шукає найменше число в масиві.
 // Додайте перевірку, що функція отримує саме масив, і
 // якщо функція отримує масив - поверніть з функції найменше число,
@@ -104,8 +114,14 @@
 //   if (numbers.length === 0) {
 //     return "Array is empty!";
 //   }
-
+//   // let smallestNumber = numbers[0];
+//   // for (const number of numbers) {
+//   //   if (smallestNumber < number) {
+//   //     smallestNumber = number;
+//   //   }
+//   // }
 //   return Math.min(...numbers);
+//   return smallestNumber;
 // }
 
 // console.log(findSmallestNumber(numbers)); // 2
@@ -116,7 +132,7 @@
 // console.log(findSmallestNumber([3, 1, 4, 1, 5, 9])); // 1
 // console.log(findSmallestNumber([42])); // 42
 
-//6 // Напишіть функцію findLongestWord(string), яка
+//6  Напишіть функцію findLongestWord(string), яка
 // приймає довільний рядок, що складається лише зі слів, розділених
 // пробілами (параметр string), і повертатиме найдовше слово у реченні.
 
@@ -206,44 +222,44 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties' /
 
-// const calculator = {
-//   a: null,
-//   b: null,
+const calculator = {
+  read(a, b) {
+    this.a = a;
+    this.b = b;
+  },
 
-//   read(a, b) {
-//     this.a = a;
-//     this.b = b;
-//   },
+  exist() {
+    return this.a !== undefined && this.b !== undefined;
+  },
 
-//   exist() {
-//     return this.a !== null && this.b !== null;
-//   },
+  sum() {
+    if (!this.exist()) {
+      return "No such properties";
+    }
+    return this.a + this.b;
+  },
 
-//   sum() {
-//     if (!this.exist()) {
-//       return "No such properties";
-//     }
-//     return this.a + this.b;
-//   },
+  mult() {
+    if (!this.exist()) {
+      return "No such properties";
+    }
+    return this.a * this.b;
+  },
+};
+// Приклади використання
+console.dir(calculator);
+calculator.read(5, 10);
+console.log(calculator.exist());
 
-//   mult() {
-//     if (!this.exist()) {
-//       return "No such properties";
-//     }
-//     return this.a * this.b;
-//   },
-// };
-// // Приклади використання
-// calculator.read(5, 10);
-// console.log(calculator.sum()); // 15
-// console.log(calculator.mult()); // 50
-// calculator.read(3, 7);
-// console.log(calculator.sum()); // 10
+console.log(calculator.sum()); // 15
+console.log(calculator.mult()); // 50
+calculator.read(3, 7);
+console.log(calculator.sum()); // 10
 // console.log(calculator.mult()); // 21
 // calculator.read(0, 0);
 // console.log(calculator.sum()); // 0
 // console.log(calculator.mult()); // 0
-// calculator.read(null, null);
+// // calculator.read(null, null);
 
 // 10// Напишіть функцію calcTotalPrice(fruits, fruitName),
 // яка приймає массив об'єктів (fruits) і рядок з назвою фрукта (fruitName).
@@ -253,30 +269,30 @@
 // Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою
 // назвою фрукта, це також треба урахувати.
 
-const fruits = [
-  { name: "Яблуко", price: 45, quantity: 7 },
-  { name: "Апельсин", price: 60, quantity: 4 },
-  { name: "Банан", price: 125, quantity: 8 },
-  { name: "Груша", price: 350, quantity: 2 },
-  { name: "Виноград", price: 440, quantity: 3 },
-  { name: "Банан", price: 125, quantity: 3 },
-];
+// const fruits = [
+//   { name: "Яблуко", price: 45, quantity: 7 },
+//   { name: "Апельсин", price: 60, quantity: 4 },
+//   { name: "Банан", price: 125, quantity: 8 },
+//   { name: "Груша", price: 350, quantity: 2 },
+//   { name: "Виноград", price: 440, quantity: 3 },
+//   { name: "Банан", price: 125, quantity: 3 },
+// ];
 
-function calcTotalPrice(fruits, fruitName) {
-  let totalPrice = 0;
+// function calcTotalPrice(fruits, fruitName) {
+//   let totalPrice = 0;
 
-  for (const fruit of fruits) {
-    if (fruit.name === fruitName) {
-      totalPrice += fruit.price * fruit.quantity;
-    }
-  }
+//   for (const fruit of fruits) {
+//     if (fruit.name === fruitName) {
+//       totalPrice += fruit.price * fruit.quantity;
+//     }
+//   }
 
-  return totalPrice;
-}
-// Приклади використання
-console.log(calcTotalPrice(fruits, "Банан")); // 1375
-console.log(calcTotalPrice(fruits, "Яблуко")); // 315
-console.log(calcTotalPrice(fruits, "Апельсин")); // 240
-console.log(calcTotalPrice(fruits, "Груша")); // 700
-console.log(calcTotalPrice(fruits, "Виноград")); // 1320
-console.log(calcTotalPrice(fruits, "Персик")); // 0 (якщо такого фрукта немає)
+//   return totalPrice;
+// }
+// // Приклади використання
+// console.log(calcTotalPrice(fruits, "Банан")); // 1375
+// console.log(calcTotalPrice(fruits, "Яблуко")); // 315
+// console.log(calcTotalPrice(fruits, "Апельсин")); // 240
+// console.log(calcTotalPrice(fruits, "Груша")); // 700
+// console.log(calcTotalPrice(fruits, "Виноград")); // 1320
+// console.log(calcTotalPrice(fruits, "Персик")); // 0 (якщо такого фрукта немає)
