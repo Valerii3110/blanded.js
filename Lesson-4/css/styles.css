@@ -30,6 +30,9 @@
     padding: 0;
   }
   
+  h3.active {
+    color: red;
+  }
   
   /* components */
   
@@ -123,4 +126,5 @@
     border: 2px dashed red;
     margin: 10px;
   }
+  
   
